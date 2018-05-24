@@ -25,9 +25,9 @@ void setup()
 }
  
 void loop(){
-  float ldr = analogRead(A0) ; 
+  ldr = analogRead(A0) ; 
  Serial.println(ldr);
-  float ldr2=analogRead(A1);
+  ldr2=analogRead(A1);
   Serial.println(ldr2);
  ldr_yolla(ldr,ldr2);
  // dakikada 1 güncellenmesi için 1 dakika bekle
