@@ -1,4 +1,4 @@
-#define ag_ismi "pala"
+#define ag_ismi ""
 #define ag_sifresi ""
 #define IP "184.106.153.149"    //thingspeak.com IP adresi
  
@@ -45,7 +45,7 @@ void ldr_yolla(float ldr,float ldr2){
     return;
   }
   
- String yollanacakkomut = "GET /update?key=NTOI3YY8GBCA0GLU&field1=";   // Burada 64T0OS3R1OEAYUML yazan kýsým bizim API Key den aldýðýmýz Key. Siz buraya kendi keyinizi yazacaksýnýz.
+ String yollanacakkomut = "GET /update?key=NTOI3YY8GBCA0GLU&field1=";   // Burada NTOI3YY8GBCA0GLU yazan kýsým bizim API Key den aldýðýmýz Key. Siz buraya kendi keyinizi yazacaksýnýz.
  yollanacakkomut += (int(ldr));                                      // Burada ise sýcaklýðýmýzý float deðiþkenine atayarak yollanacakkomut deðiþkenine ekliyoruz.
                                               // ESP modülümüz ile seri iletiþim kurarken yazdýðýmýz komutlarýn modüle iletilebilmesi için Enter komutu yani
  yollanacakkomut += "&field2=";
