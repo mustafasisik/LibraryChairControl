@@ -1,25 +1,25 @@
-#define ag_ismi "" // bağlanılacak ağın adı
-#define ag_sifresi "" // bağlanılacak ağın şifresi
-#define IP "184.106.153.149"    //thingspeak.com IP adresi
- 
+#define wifi_name "" // name of the network
+#define wifi_password "" // network password
+#define IP "184.106.153.149"    // IP of thingspeak.com
+#define key "NTOI3YY8GBCA0GLU" // key of our thingspeak channel you can change it to yours.
 float ldr;
 float ldr2;
  
 void setup()
 {
-  Serial.begin(115200); //Seriport'u açýyoruz. Güncellediðimiz 
-                        //ESP modülünün baudRate deðeri 115200 olduðu için bizde Seriport'u 115200 þeklinde seçiyoruz
+  Serial.begin(115200); //Opens serial port.
+                        //Baudrate of the ESP8266 is 115200
   
-  Serial.println("AT"); //ESP modülümüz ile baðlantý kurulup kurulmadýðýný kontrol ediyoruz.
+  Serial.println("AT"); //To test if module is connected.
   
-  delay(3000); //ESP ile iletiþim için 3 saniye bekliyoruz.
+  delay(3000); //3 secs delay
   analogReference(INTERNAL);
-  if(Serial.find("OK")){         //esp modülü ile baðlantýyý kurabilmiþsek modül "AT" komutuna "OK" komutu ile geri dönüþ yapýyor.
-     Serial.println("AT+CWMODE=1"); //esp modülümüzün WiFi modunu STA þekline getiriyoruz. Bu mod ile modülümüz baþka aðlara baðlanabilecek.
+  if(Serial.find("OK")){         //If ESP is connected.
+     Serial.println("AT+CWMODE=1"); // To make the ESP module be able to can connect other networks.
      delay(2000);
-     String baglantiKomutu=String("AT+CWJAP=\"")+ag_ismi+"\",\""+ag_sifresi+"\"";
-     Serial.println(baglantiKomutu);
-     delay(5000);
+     String connectionCommand=String("AT+CWJAP=\"")+wifi_name+"\",\""+wifi_password+"\"";
+     Serial.println(connectionCommand);
+     delay(5000); // 5 secs delay.
  }
 }
 
@@ -29,35 +29,35 @@ void loop(){
   ldr2=analogRead(A1);
   Serial.println(ldr2);
   ldr_yolla(ldr,ldr2);
-  delay(1000); // dakikada 1 güncellenmesi için 1 dakika bekle
+  delay(1000); // Refresh every sec.
 }
  
 void ldr_yolla(float ldr,float ldr2){
-  Serial.println(String("AT+CIPSTART=\"TCP\",\"") + IP + "\",80");  //thingspeak sunucusuna baðlanmak için bu kodu kullanýyoruz. 
-                                                                   //AT+CIPSTART komutu ile sunucuya baðlanmak için sunucudan izin istiyoruz. 
-                                                                   //TCP burada yapacaðýmýz baðlantý çeþidini gösteriyor. 80 ise baðlanacaðýmýz portu gösteriyor
+  Serial.println(String("AT+CIPSTART=\"TCP\",\"") + IP + "\",80");  //To connect thingspeak.
+                                                                   //AT+CIPSTART request permission. 
+                                                                   //TCP is the connection type.
   delay(1000);
-  if(Serial.find("Error")){     //sunucuya baðlanamazsak ESP modülü bize "Error" komutu ile dönüyor.
+  if(Serial.find("Error")){     //If ESP couldn't connet.
     Serial.println("AT+CIPSTART Error");
     return;
   }
   
-  String yollanacakkomut = "GET /update?key=NTOI3YY8GBCA0GLU&field1=";   // Burada NTOI3YY8GBCA0GLU yazan kýsým bizim API Key den aldýðýmýz Key. Siz buraya kendi keyinizi yazacaksýnýz.
-  yollanacakkomut += (int(ldr));                                      // Burada ise sýcaklýðýmýzý float deðiþkenine atayarak yollanacakkomut deðiþkenine ekliyoruz.
-                                              // ESP modülümüz ile seri iletiþim kurarken yazdýðýmýz komutlarýn modüle iletilebilmesi için Enter komutu yani
-  yollanacakkomut += "&field2=";
-  yollanacakkomut +=(int(ldr2));
-  yollanacakkomut += "\r\n\r\n";
-  delay(3000);                                                                                // /r/n komutu kullanmamýz gerekiyor.
+  String sendCommand = "GET /update?key="+key+"&field1=";   // key of channel which will be use at Thingspeak 
+  sendCommand += (int(ldr));                                // Assign the value to variable
+                                              
+  sendCommand += "&field2=";
+  sendCommand +=(int(ldr2));
+  sendCommand += "\r\n\r\n"; // While establishinh a conenction to ESP module we need this Enter command (/r/n).
+  delay(3000);  // 3 secs delay                  
  
-  Serial.print("AT+CIPSEND=");                    //veri yollayacaðýmýz zaman bu komutu kullanýyoruz. Bu komut ile önce kaç tane karakter yollayacaðýmýzý söylememiz gerekiyor.
-  Serial.println(yollanacakkomut.length()+2);       //yollanacakkomut deðiþkeninin kaç karakterden oluþtuðunu .length() ile bulup yazýrýyoruz.
+  Serial.print("AT+CIPSEND=");                    // to send data..
+  Serial.println(sendCommand.length()+2);       // determines how many variable the data will contain.
  
-  delay(1000);
+  delay(1000); // refresh every sec.
  
-  if(Serial.find(">")){                           //eðer sunucu ile iletiþim saðlayýp komut uzunluðunu gönderebilmiþsek ESP modülü bize ">" iþareti ile geri dönüyor.
-                                                 // arduino da ">" iþaretini gördüðü anda sýcaklýk verisini esp modülü ile thingspeak sunucusuna yolluyor.
-    Serial.print(yollanacakkomut);
+  if(Serial.find(">")){                           // If we connected the ESP and get the data length.
+                                                 
+    Serial.print(sendCommand);  // Arduino sends the data.
     Serial.print("\r\n\r\n");
   }else{
     Serial.println("AT+CIPCLOSE");
