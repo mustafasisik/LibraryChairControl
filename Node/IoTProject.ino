@@ -1,5 +1,5 @@
-#define ag_ismi ""
-#define ag_sifresi ""
+#define ag_ismi "" // bağlanılacak ağın adı
+#define ag_sifresi "" // bağlanılacak ağın şifresi
 #define IP "184.106.153.149"    //thingspeak.com IP adresi
  
 float ldr;
