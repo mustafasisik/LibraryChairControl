@@ -11,7 +11,6 @@ void setup()
                         //Baudrate of the ESP8266 is 115200
   
   Serial.println("AT"); //To test if module is connected.
-  
   delay(3000); //3 secs delay
   analogReference(INTERNAL);
   if(Serial.find("OK")){         //If ESP is connected.
