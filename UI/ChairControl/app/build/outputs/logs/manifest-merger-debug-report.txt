@@ -1,0 +1,107 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:2:1-23:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/mustafa/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/64ea6d74b4245a228a7e0801232c7479/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/mustafa/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/52fc626d6d82a449163128afaec48f84/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:27.1.1] /home/mustafa/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/6885630c102b95ae4c3dd73a0af3b0cc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/mustafa/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/c07812d94ef7e3d66aeec904e7a90368/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/mustafa/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/f57d8ca188ecbfb9531b358210f61f97/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/mustafa/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/f3e9a06a04586fc4e819ef687acd16db/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/mustafa/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/ff6d723fff34a8809443c29c7d3b6ae9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /home/mustafa/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/b562789adb24228e0ea232ce21142d1e/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/mustafa/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/ac379c0b79b5527a03c69696965eeb34/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/mustafa/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/d635b075a507aa477b965e16a6f8836c/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/mustafa/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6269a828557ae4d587ed4b2ffc70016b/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /home/mustafa/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/e29821af98262cb22e748d746226c036/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:2:1-23:12
+	package
+		ADDED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:3:5-31
+		INJECTED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml
+		INJECTED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml
+		ADDED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:2:1-23:12
+		INJECTED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml
+		ADDED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:2:1-23:12
+		INJECTED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:5:5-66
+	android:name
+		ADDED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:5:22-64
+application
+ADDED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:7:5-21:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/mustafa/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/52fc626d6d82a449163128afaec48f84/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/mustafa/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/52fc626d6d82a449163128afaec48f84/AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:10:9-41
+	android:roundIcon
+		ADDED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:11:9-54
+	android:icon
+		ADDED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:13:9-40
+activity#iot.chaircontrol.MainActivity
+ADDED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:14:9-20:20
+	android:name
+		ADDED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:14:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:15:13-19:29
+action#android.intent.action.MAIN
+ADDED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:16:17-69
+	android:name
+		ADDED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml:18:27-74
+uses-sdk
+INJECTED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml
+INJECTED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/mustafa/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/64ea6d74b4245a228a7e0801232c7479/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/mustafa/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/64ea6d74b4245a228a7e0801232c7479/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/mustafa/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/52fc626d6d82a449163128afaec48f84/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/mustafa/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/52fc626d6d82a449163128afaec48f84/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:27.1.1] /home/mustafa/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/6885630c102b95ae4c3dd73a0af3b0cc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/mustafa/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/6885630c102b95ae4c3dd73a0af3b0cc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/mustafa/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/c07812d94ef7e3d66aeec904e7a90368/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/mustafa/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/c07812d94ef7e3d66aeec904e7a90368/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/mustafa/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/f57d8ca188ecbfb9531b358210f61f97/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/mustafa/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/f57d8ca188ecbfb9531b358210f61f97/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/mustafa/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/f3e9a06a04586fc4e819ef687acd16db/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/mustafa/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/f3e9a06a04586fc4e819ef687acd16db/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/mustafa/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/ff6d723fff34a8809443c29c7d3b6ae9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/mustafa/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/ff6d723fff34a8809443c29c7d3b6ae9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/mustafa/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/b562789adb24228e0ea232ce21142d1e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/mustafa/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/b562789adb24228e0ea232ce21142d1e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/mustafa/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/ac379c0b79b5527a03c69696965eeb34/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/mustafa/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/ac379c0b79b5527a03c69696965eeb34/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/mustafa/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/d635b075a507aa477b965e16a6f8836c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/mustafa/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/d635b075a507aa477b965e16a6f8836c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/mustafa/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6269a828557ae4d587ed4b2ffc70016b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/mustafa/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6269a828557ae4d587ed4b2ffc70016b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/mustafa/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/e29821af98262cb22e748d746226c036/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/mustafa/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/e29821af98262cb22e748d746226c036/AndroidManifest.xml:20:5-44
+INJECTED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml
+INJECTED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml
+		ADDED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml
+		INJECTED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml
+		ADDED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml
+		INJECTED from /home/mustafa/ChairControl/app/src/main/AndroidManifest.xml
