@@ -35,7 +35,7 @@ Hi guys, I am Mustafa Şişik, 4th grade Computer Engineering student at Boğazi
 * E-mail: mustafa.sisik@boun.edu.tr
 
 # Hardware setup
-
+<img src="https://github.com/bounIoT/LibraryChairControl/blob/master/Figures/HardwareSetup.jpg">
 [[https://github.com/bounIoT/LibraryChairControl/blob/master/Figures/HardwareSetup.jpg|alt=HW Setup]]
 
 # Flow of data 
