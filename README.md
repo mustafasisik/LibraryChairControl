@@ -36,11 +36,10 @@ Hi guys, I am Mustafa Şişik, 4th grade Computer Engineering student at Boğazi
 
 # Hardware setup
 <img src="https://github.com/bounIoT/LibraryChairControl/blob/master/Figures/HardwareSetup.jpg">
-[[https://github.com/bounIoT/LibraryChairControl/blob/master/Figures/HardwareSetup.jpg|alt=HW Setup]]
 
 # Flow of data 
 
-[[https://github.com/bounIoT/LibraryChairControl/blob/master/Figures/FlowOfData.jpg|alt=Flow of Data]]
+<img src="https://github.com/bounIoT/LibraryChairControl/blob/master/Figures/FlowOfData.jpg">
 
 
 # Development Environment
