@@ -25,7 +25,7 @@ void setup()
 void loop(){
   ldr = analogRead(A0) ; 
   Serial.println(ldr);
-  ldr2=analogRead(A1);
+  ldr2=analogRead(A2);
   Serial.println(ldr2);
   ldr_yolla(ldr,ldr2);
   delay(1000); // Refresh every sec.
